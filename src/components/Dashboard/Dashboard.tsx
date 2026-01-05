@@ -162,20 +162,20 @@ function DashboardContent() {
   })
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100" data-testid="dashboard-container">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
-        <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <div className="mb-8 text-center" data-testid="dashboard-header">
+          <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent" data-testid="dashboard-title">
             Applied LLM Platform
           </h1>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-lg" data-testid="dashboard-description">
             Explore 20+ LLM examples across Agents, Chat, RAG, and Evaluation
           </p>
         </div>
 
         {/* Search and Filter */}
-        <div className="mb-8">
+        <div className="mb-8" data-testid="dashboard-filters">
           <div className="max-w-2xl mx-auto mb-4">
             <Input
               type="text"
@@ -183,16 +183,18 @@ function DashboardContent() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full"
+              data-testid="dashboard-search-input"
             />
           </div>
           
-          <div className="flex justify-center gap-2 flex-wrap">
+          <div className="flex justify-center gap-2 flex-wrap" data-testid="dashboard-category-filters">
             {categories.map((category) => (
               <Button
                 key={category}
                 variant={selectedCategory === category ? 'default' : 'outline'}
                 onClick={() => setSelectedCategory(category)}
                 className="min-w-[100px]"
+                data-testid={`dashboard-category-${category.toLowerCase()}`}
               >
                 {category}
               </Button>
@@ -201,23 +203,23 @@ function DashboardContent() {
         </div>
 
         {/* Examples Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="dashboard-examples-grid">
           {filteredExamples.map((example) => (
-            <Card key={example.id} className="hover:shadow-lg transition-shadow">
+            <Card key={example.id} className="hover:shadow-lg transition-shadow" data-testid={`dashboard-card-${example.id}`}>
               <CardHeader>
                 <div className="flex justify-between items-start mb-2">
-                  <CardTitle className="text-xl">{example.title}</CardTitle>
-                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                  <CardTitle className="text-xl" data-testid={`dashboard-card-title-${example.id}`}>{example.title}</CardTitle>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full" data-testid={`dashboard-card-category-${example.id}`}>
                     {example.category}
                   </span>
                 </div>
-                <CardDescription className="text-sm">
+                <CardDescription className="text-sm" data-testid={`dashboard-card-description-${example.id}`}>
                   {example.description}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <Link href={example.path}>
-                  <Button className="w-full">
+                  <Button className="w-full" data-testid={`dashboard-card-button-${example.id}`}>
                     Try it out →
                   </Button>
                 </Link>
@@ -228,13 +230,13 @@ function DashboardContent() {
 
         {/* No Results */}
         {filteredExamples.length === 0 && (
-          <div className="text-center py-12">
+          <div className="text-center py-12" data-testid="dashboard-no-results">
             <p className="text-gray-500 text-lg">No examples found matching your search.</p>
           </div>
         )}
 
         {/* Stats Footer */}
-        <div className="mt-12 text-center text-gray-500 text-sm">
+        <div className="mt-12 text-center text-gray-500 text-sm" data-testid="dashboard-stats-footer">
           Showing {filteredExamples.length} of {examples.length} examples
         </div>
       </div>
@@ -245,7 +247,7 @@ function DashboardContent() {
 export default function Dashboard() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center" data-testid="dashboard-loading">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
           <p className="mt-4 text-gray-600">Loading dashboard...</p>
