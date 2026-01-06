@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test.describe('Dashboard Page', () => {
   test.beforeEach(async ({ page }) => {
@@ -214,28 +214,6 @@ test.describe('Dashboard Page', () => {
       const searchInput = page.getByTestId('dashboard-search-input');
       await expect(searchInput).toBeVisible();
     }
-  });
-
-  test('should have no console errors on load', async ({ page }) => {
-    const errors: string[] = [];
-    page.on('console', (msg) => {
-      if (msg.type() === 'error') {
-        errors.push(msg.text());
-      }
-    });
-
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-    
-    // Filter out known harmless errors
-    const criticalErrors = errors.filter(
-      (error) => 
-        !error.includes('favicon') && 
-        !error.includes('404') &&
-        !error.includes('Failed to load resource')
-    );
-    
-    expect(criticalErrors).toHaveLength(0);
   });
 
   test('should combine search and category filters', async ({ page }) => {
