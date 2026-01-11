@@ -216,13 +216,11 @@ Deploy to Azure Container Apps with managed PostgreSQL:
 
 We welcome contributions! Here's how you can help:
 
-1. 🐛 **Report bugs** - [Open a bug report](https://github.com/pacozaa/Applied-LLM-Platform/issues/new?template=bug_report.md)
-2. 💡 **Suggest features** - [Request a feature](https://github.com/pacozaa/Applied-LLM-Platform/issues/new?template=feature_request.md)
-3. 📖 **Improve docs** - [Suggest documentation improvements](https://github.com/pacozaa/Applied-LLM-Platform/issues/new?template=documentation.md)
+1. 🐛 **Report bugs** - [Open an issue](https://github.com/pacozaa/Applied-LLM-Platform/issues/new)
+2. 💡 **Suggest features** - [Request a feature](https://github.com/pacozaa/Applied-LLM-Platform/issues/new)
+3. 📖 **Improve docs** - Submit a PR with documentation improvements
 4. ✨ **Add examples** - Create new LLM integration patterns
 5. 🧪 **Write tests** - Increase test coverage
-
-See our **[Contributing Guide](CONTRIBUTING.md)** for detailed guidelines.
 
 ---
 
@@ -232,8 +230,6 @@ See our **[Contributing Guide](CONTRIBUTING.md)** for detailed guidelines.
 - ✅ **Documentation**: Comprehensive guides available
 - ✅ **CI/CD**: Playwright E2E tests configured
 - 📈 **Test Coverage**: ~5% (targeting 60-70%)
-
-See **[NEXT_STEPS.md](NEXT_STEPS.md)** for immediate action items and **[RECOMMENDATIONS.md](RECOMMENDATIONS.md)** for the full roadmap.
 
 ---
 
