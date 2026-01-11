@@ -1,278 +1,261 @@
-# Applied-LLM-Platform
+# 🚀 Applied-LLM-Platform
 
-## Description
+[![Next.js](https://img.shields.io/badge/Next.js-14+-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-green?style=flat-square&logo=openai)](https://openai.com/)
+[![License](https://img.shields.io/badge/License-Educational-yellow?style=flat-square)](LICENSE)
 
-This project is used for training developer to understand the numbers of core concepts of LLM at software development level.
+> 🎓 **Learn by Doing** - Master LLM integration patterns through hands-on examples and real-world implementations
 
-## 🚀 Quick Links
+A comprehensive learning platform featuring **20+ production-ready examples** of Large Language Model integrations, from basic chat to advanced RAG systems and autonomous agents.
 
-- **[Getting Started Guide](GETTING_STARTED.md)** - New to this project? Start here!
+---
 
-## List of Examples
+## ✨ Why This Platform?
 
-### Developer Agent
-A powerful LLM-powered shell agent that can understand and execute shell commands based on natural language instructions. This agent can:
-- Execute complex shell operations through simple English commands
-- Handle file system operations, text processing, and system commands
-- Create short POC projects such as web servers, databases, and backend APIs
-- Handle Kubernetes, Docker, and other containerization tasks
-- Provide reasoning of commands before execution
-- Maintain context and handle multi-step tasks
+🎯 **Learn by Building** - Each example is a complete, working implementation  
+🔧 **Production Ready** - Battle-tested patterns you can use in real projects  
+📚 **Comprehensive** - From basics to advanced: Chat, RAG, Agents, Tools  
+🚀 **Easy Setup** - Get started in 5 minutes with our quick start guide  
+🔄 **Active Development** - Regularly updated with new patterns and examples
 
-[Developer Agent](./docs/DeveloperAgent.md)
+---
+
+## 🎬 Quick Start
+
+Get up and running in **5 minutes**:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/pacozaa/Applied-LLM-Platform.git
+cd Applied-LLM-Platform
+
+# 2. Install dependencies
+npm install
+
+# 3. Set up environment
+cp .env.example .env
+# Add your OPENAI_API_KEY to .env
+
+# 4. Initialize database
+npx prisma generate && npx prisma db push
+
+# 5. Start the server
+npm run dev
+```
+
+🎉 **That's it!** Open [http://localhost:3000](http://localhost:3000) and start exploring.
+
+> 💡 **New here?** Check out the **[Complete Getting Started Guide](GETTING_STARTED.md)** for detailed setup with troubleshooting.
+
+---
+
+## 🎯 What You'll Learn
+
+### 💬 **Chat Implementations**
+Master different chat patterns - from basic GPT interactions to tool-augmented conversations and real-world API integrations.
+
+[Explore Chat Examples →](docs/features/overview.md#chat-examples)
+
+### 🧠 **RAG Systems** (Retrieval-Augmented Generation)
+Build intelligent knowledge bases with vector search, graph databases, and agentic workflows.
+
+[Explore RAG Examples →](docs/features/overview.md#rag-retrieval-augmented-generation)
+
+### 🤖 **Autonomous Agents**
+Create agents that reason, search the web, and execute commands autonomously.
+
+[Explore Agents →](docs/features/overview.md#search--research)
+
+### 🛠️ **Developer Tools**
+Automate development tasks with LLM-powered shell agents and document processors.
+
+[Explore Tools →](docs/features/overview.md#developer-tools)
+
+---
+
+## 🌟 Featured Examples
+
+### 🤖 Developer Agent
+> Transform natural language into shell commands
+
+A powerful LLM-powered shell agent that understands your intent and executes complex operations:
+- 📝 Natural language → Shell commands
+- 🐳 Docker & Kubernetes automation
+- 🏗️ Quick POC project scaffolding
+- 🔄 Multi-step task handling with context
+
+**[Read Guide](docs/archived/DeveloperAgent.md)** | **Try it at `/react` after running locally**
 
 https://github.com/user-attachments/assets/1ecab839-f7cd-4ca2-9f12-cf92c7bd96c9
 
-### Chat
-A basic chat implementation demonstrating:
-- Direct interaction with OpenAI's GPT models
-- Simple conversation handling
-- Basic prompt engineering techniques
-- Memory management for contextual conversations
+---
+
+### 💬 Interactive Chat
+> Learn LLM basics with hands-on chat examples
+
+Start with simple conversations and progress to advanced patterns:
+- ✨ **Basic Chat** - Direct GPT-4 interaction
+- 🔧 **Chat with Tools** - Function calling & custom tools
+- 🏥 **Chat with Insurance API** - Real-world API integration
 
 https://github.com/user-attachments/assets/ab4950d1-9ad7-4f61-a79f-2fbcf72bac08
 
-### Chat with Tools
-An advanced chat system that incorporates:
-- Custom tool integration with LLM
-- Function calling capabilities
-- Dynamic response handling
-- Tool-augmented conversations for enhanced functionality
+---
 
-https://github.com/user-attachments/assets/9b3ebb4c-b231-417e-9bf7-ebfad94d7d2d
+### 🧠 RAG Systems
+> Build intelligent knowledge bases
 
-### Chat with Insurance API
-A specialized chat implementation that:
-- Integrates with insurance-specific APIs
-- Handles insurance-related queries and calculations
-- Provides policy information and quotes
-- Demonstrates real-world API integration with LLM
-
-https://github.com/user-attachments/assets/a8d4cef0-4f69-4df4-a40b-9aeedc8a8dac
-
-### RAG Chunking Raw Text
-A Retrieval-Augmented Generation (RAG) example showing:
-- Text chunking strategies for large documents
-- Efficient document processing
-- Optimal chunk size determination
-- Enhanced context retrieval for more accurate responses
+Multiple RAG implementations from beginner to advanced:
+- 📄 **RAG with Chunking** - Learn the fundamentals
+- 🔍 **RAG with Qdrant** - Production vector search
+- 🤖 **RAG Agentic** - Multi-step reasoning
+- 🕸️ **RAG with Graph** - Connected knowledge
 
 https://github.com/user-attachments/assets/18f7a74e-968f-44dd-a29c-c91b5ee3098c
 
-### RAG Qdrant
-An advanced RAG implementation using Qdrant vector database:
-- Vector-based similarity search
-- Efficient document embedding and storage
-- Fast and accurate information retrieval
-- Scalable knowledge base management
+---
 
-https://github.com/user-attachments/assets/b9be1ad1-f23b-4f83-ae9d-16af1f6661bd
+### 🔍 ReAct Search Agent
+> Internet-connected AI that thinks and acts
 
-## 📖 Documentation
+Combines reasoning with web search for intelligent research:
+- 🌐 Real-time web search integration
+- 🧩 Multi-step problem solving
+- 📚 Fact verification & citations
 
-### For Users
-- **[Getting Started](GETTING_STARTED.md)** - Complete setup guide with troubleshooting
-- **[Testing Guide](tests/README.md)** - How to run and write tests
+**[Read Guide](docs/archived/REACT_TAVILY_SEARCH.md)**
 
+https://github.com/user-attachments/assets/9b3ebb4c-b231-417e-9bf7-ebfad94d7d2d
 
-### Feature Documentation
-- **[Developer Agent](docs/archived//DeveloperAgent.md)** - LLM-powered shell agent
-- **[ReAct with Tavily](docs/archived//REACT_TAVILY_SEARCH.md)** - Internet-connected AI agent
-- **[Prisma Guide](docs/archived//PRISMA_Guide.md)** - Database setup and usage
-- **[Pipeline API](docs/archived//PIPELINE_API_Guide.md)** - Document processing pipeline
-- **[PostgreSQL Setup](docs/archived//SETUP_POSTGRESQL_DOCKER_LOCALLY.md)** - Database configuration
+---
 
-## Getting Started
+**[View All 20+ Examples →](docs/features/overview.md)**
 
-> 💡 **New here?** Check out the **[Complete Getting Started Guide](GETTING_STARTED.md)** for detailed setup instructions with troubleshooting.
+---
 
-### Quick Start (5 minutes)
+## 📚 Documentation
 
-Setup the `.env` file:
+### 📖 **Complete Documentation**
 
-- Create a `.env` file in the root directory
-- Add the following:
+📘 **[Documentation Home](docs/README.md)** - Your guide to everything
+
+### 🚀 **Getting Started**
+- **[Setup Guide](GETTING_STARTED.md)** - Get running in 5 minutes
+- **[Features Overview](docs/features/overview.md)** - All 20+ examples explained
+
+### 🔧 **Setup Guides**
+- **[Qdrant (Vector DB)](docs/setup/qdrant.md)** - For RAG examples
+- **[Neo4j (Graph DB)](docs/setup/neo4j.md)** - For graph-based RAG
+- **[PostgreSQL](docs/setup/postgresql.md)** - Database setup
+- **[Prisma ORM](docs/setup/prisma.md)** - Database management
+
+### 🎯 **Advanced Topics**
+- **[Testing Guide](docs/testing/overview.md)** - E2E and unit tests
+- **[Azure Deployment](docs/deployment/azure.md)** - Production deployment
+- **[Developer Agent](docs/archived/DeveloperAgent.md)** - Shell automation
+- **[ReAct with Tavily](docs/archived/REACT_TAVILY_SEARCH.md)** - Search agent
+
+---
+
+## 🏗️ Built With
+
+**Frontend & Framework**
+- [Next.js 14+](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [shadcn/ui](https://ui.shadcn.com/) - UI components
+
+**LLM & AI**
+- [OpenAI](https://openai.com/) - GPT models
+- [Langchain](https://www.langchain.com/) - LLM framework
+- [Langfuse](https://langfuse.com/) - Observability
+
+**Databases**
+- [Prisma](https://www.prisma.io/) - ORM
+- [PostgreSQL](https://www.postgresql.org/) - Relational database
+- [Qdrant](https://qdrant.tech/) - Vector database
+- [Neo4j](https://neo4j.com/) - Graph database
+
+---
+
+## 🧪 Testing
+
+Comprehensive test suite with Playwright & Jest:
 
 ```bash
-OPENAI_API_KEY=YOUR_KEY
-DATABASE_URL="******localhost:5432/playground"
-```
-
-Install:
-
-```bash
-npm install
-#or
-yarn
-```
-
-Run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Testing
-
-This project includes end-to-end tests using Playwright.
-
-### Running Tests
-
-```bash
-# Install Playwright browsers (first time only)
-npm run playwright:install
-
-# Run all tests
+# Run E2E tests
 npm run test:e2e
 
-# Run tests with UI mode
-npm run test:e2e:ui
+# Run unit tests
+npm run test:unit
 
-# View test report
-npm run test:e2e:report
+# Watch mode
+npm run test:watch
 ```
 
-For more details, see [tests/README.md](./tests/README.md).
+**[View Testing Guide →](docs/testing/overview.md)**
 
-## Setup Qdrant Vector Database
+---
 
-[Qdrant](https://qdrant.tech/documentation/quickstart/)
+## 🚀 Deployment
 
-```bash
-docker pull qdrant/qdrant
-docker run -d \
-    --name qdrant \
-    --restart always \
-    -p 6333:6333 -p 6334:6334 \
-    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
-    qdrant/qdrant
-```
+Deploy to Azure Container Apps with managed PostgreSQL:
 
-### Config Volume
+**Includes:**
+- ✅ Auto-scaling container apps
+- ✅ Managed PostgreSQL database
+- ✅ HTTPS endpoints
+- ✅ Built-in monitoring
 
-The -v flag mounts the qdrant_storage directory as a volume, which is where the Qdrant data will be stored.
-and you need to configure docker to have permission to access the volume, by Going to Setting > Resources > File Sharing and adding the qdrant_storage directory or parent directory to the list.
+**[View Deployment Guide →](docs/deployment/azure.md)** | **[Azure Templates →](azure/)**
 
-### Check if Qdrant run
-
-- If you’ve set up a deployment locally with the Qdrant Quickstart, navigate to http://localhost:6333/dashboard.
-
-- If you’ve set up a deployment in a cloud cluster, find your Cluster URL in your cloud dashboard, at https://cloud.qdrant.io. Add :6333/dashboard to the end of the URL.
-
-## Setup Neo4j Graph Database
-
-[Neo4j](https://neo4j.com/docs/operations-manual/current/docker/introduction/)
-
-```bash
-docker run \
-    --name neo4j \
-    --restart always \
-    --publish=7474:7474 --publish=7687:7687 \
-    -e NEO4J_AUTH=neo4j/yourpassword \
-    -e NEO4JLABS_PLUGINS='["apoc"]' \
-    -v $PWD/data:/data \
-    -v $PWD/logs:/logs \
-    neo4j:5.26.0
-```
-
-- Username is `neo4j`
-- Password is `yourpassword`
-- URI is `neo4j://localhost:7687`
-
-## Setup Prisma with PostgreSQL
-
-This project uses Prisma with PostgreSQL as the database. Here's how to set it up and interact with it:
-
-### Initial Setup
-
-1. **Set up PostgreSQL locally** - Follow the **[PostgreSQL Setup Guide](docs/SETUP_POSTGRESQL_DOCKER_LOCALLY.md)** to run PostgreSQL using Docker
-2. The database schema is defined in `prisma/schema.prisma`
-3. After setting up PostgreSQL and configuring your `.env` file, run migrations:
-
-```bash
-npx prisma migrate dev
-```
-
-This will:
-- Create a new migration file
-- Apply the migration to your database
-- Generate the Prisma Client
-
-For detailed Prisma commands and workflows, see the **[Prisma Guide](docs/PRISMA_Guide.md)**.
-
-### Using Prisma Studio
-
-To view and edit your database through a GUI interface:
-
-1. Run Prisma Studio:
-```bash
-npx prisma studio
-```
-
-2. Open your browser and navigate to `http://localhost:5555`
-
-### What You Should See
-
-When Prisma Studio opens, you should see:
-- All your defined models listed in the left sidebar
-- Empty tables if this is a fresh setup
-- Ability to add, edit, and delete records directly through the interface
-- Real-time updates as you modify the data
+---
 
 ## 🤝 Contributing
 
 We welcome contributions! Here's how you can help:
 
-1. **Report bugs** - [Open a bug report](https://github.com/pacozaa/Applied-LLM-Platform/issues/new?template=bug_report.md)
-2. **Suggest features** - [Request a feature](https://github.com/pacozaa/Applied-LLM-Platform/issues/new?template=feature_request.md)
-3. **Improve docs** - [Suggest documentation improvements](https://github.com/pacozaa/Applied-LLM-Platform/issues/new?template=documentation.md)
-4. **Add examples** - Create new LLM integration patterns
-5. **Write tests** - Increase test coverage
+1. 🐛 **Report bugs** - [Open an issue](https://github.com/pacozaa/Applied-LLM-Platform/issues/new)
+2. 💡 **Suggest features** - [Request a feature](https://github.com/pacozaa/Applied-LLM-Platform/issues/new)
+3. 📖 **Improve docs** - Submit a PR with documentation improvements
+4. ✨ **Add examples** - Create new LLM integration patterns
+5. 🧪 **Write tests** - Increase test coverage
 
-See our **[Contributing Guide](CONTRIBUTING.md)** for detailed guidelines.
+---
 
 ## 📊 Project Status
 
-- **Test Coverage**: ~5% (targeting 60-70%)
-- **Examples**: 20+ LLM integration patterns
-- **Documentation**: Comprehensive guides available
-- **CI/CD**: Playwright E2E tests configured
+- ✅ **Examples**: 20+ LLM integration patterns
+- ✅ **Documentation**: Comprehensive guides available
+- ✅ **CI/CD**: Playwright E2E tests configured
+- 📈 **Test Coverage**: ~5% (targeting 60-70%)
 
-See **[NEXT_STEPS.md](NEXT_STEPS.md)** for immediate action items and **[RECOMMENDATIONS.md](RECOMMENDATIONS.md)** for the full roadmap.
-
-## 🚀 Deployment
-
-### Azure Container Apps
-
-Deploy this project to Azure Container Apps using the provided ARM template:
-
-- **[Azure Deployment Guide](azure/DEPLOYMENT.md)** - Complete guide for deploying to Azure
-- **[Azure Templates](azure/)** - ARM templates and configuration files
-
-The deployment includes:
-- Azure Container Apps (Next.js application)
-- Azure Database for PostgreSQL
-- Auto-scaling and monitoring
-- HTTPS endpoints
-
-See the [azure/DEPLOYMENT.md](azure/DEPLOYMENT.md) for detailed deployment instructions.
+---
 
 ## 📝 License
 
 This project is for educational purposes. Check the repository for license details.
 
+---
+
 ## 🙏 Acknowledgments
 
-Built with:
-- [Next.js](https://nextjs.org/)
-- [OpenAI](https://openai.com/)
-- [Langchain](https://www.langchain.com/)
-- [shadcn/ui](https://ui.shadcn.com/)
-- [Qdrant](https://qdrant.tech/)
-- [Neo4j](https://neo4j.com/)
-- [Prisma](https://www.prisma.io/)
+Built with amazing open-source tools:
+- [Next.js](https://nextjs.org/) - React framework
+- [OpenAI](https://openai.com/) - LLM provider
+- [Langchain](https://www.langchain.com/) - LLM framework
+- [shadcn/ui](https://ui.shadcn.com/) - UI components
+- [Qdrant](https://qdrant.tech/) - Vector database
+- [Neo4j](https://neo4j.com/) - Graph database
+- [Prisma](https://www.prisma.io/) - Database ORM
 
+---
+
+<div align="center">
+
+**[⭐ Star this repo](https://github.com/pacozaa/Applied-LLM-Platform)** if you find it helpful!
+
+Made with ❤️ for the developer community
+
+</div>
