@@ -85,7 +85,7 @@ A powerful LLM-powered shell agent that understands your intent and executes com
 - 🏗️ Quick POC project scaffolding
 - 🔄 Multi-step task handling with context
 
-**[Read Guide](docs/archived/DeveloperAgent.md)** | **[Try it live](http://localhost:3000/react)**
+**[Read Guide](docs/archived/DeveloperAgent.md)** | **Try it at `/react` after running locally**
 
 https://github.com/user-attachments/assets/1ecab839-f7cd-4ca2-9f12-cf92c7bd96c9
 
